@@ -7,16 +7,6 @@ body {
     background-color: #f0f0f0;
 }
 
-.kiosk-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
 .card {
     width: 440px;
     height: 580px;
@@ -39,7 +29,7 @@ ul {
 }
 
 li {
-    margin: 80px;
+    margin: 105px;
 }
 
 a {
