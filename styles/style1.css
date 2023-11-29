@@ -18,19 +18,19 @@ body {
 }
 
 .card {
-    width: 190px;
-    height: 254px;
+    width: 440px;
+    height: 580px;
     margin: 50px auto;
-    padding: 40px;
+    padding: 10px;
     border-radius: 50px;
-    background: #e0e0e0;
+    background: mediumturquoise;
     box-shadow: 20px 20px 60px #bebebe,
                   -20px -20px 60px #ffffff;
     text-align: center;
-   }
+}
 
 h1 {
-    color: #333;
+    color: #fff;
 }
 
 ul {
@@ -39,7 +39,7 @@ ul {
 }
 
 li {
-    margin: 10px;
+    margin: 80px;
 }
 
 a {
@@ -58,7 +58,8 @@ a:hover {
 
 button {
     padding: 1.3em 3em;
-    font-size: 12px;
+    font-size: 20px;
+    font-family: 'Sunflower', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
@@ -73,7 +74,7 @@ button {
   }
   
   button:hover {
-    background-color: #23c483;
+    background-color: #e54a4a;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
