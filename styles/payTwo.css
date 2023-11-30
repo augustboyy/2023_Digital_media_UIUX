@@ -1,0 +1,334 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/*카드(배경)의 스타일 지정*/
+.cardh {
+    width: 440px;
+    height: 580px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 50px;
+    background: mediumturquoise;
+    box-shadow: 20px 20px 60px #bebebe,
+                  -20px -20px 60px #ffffff;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.container {
+    background-color: #f0f0f0;
+    display: flex;
+    width: 440px;
+    height: 100px;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    right: 35%;
+    margin: 50px auto;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+}
+
+/* 나머지 코드는 그대로 유지 */
+
+  .container:hover {
+    transform: scale(1.03);
+    width: 220px;
+  }
+  
+  .container:hover .left-side {
+    width: 100%;
+  }
+  
+  .left-side {
+    background-color: #5de2a3;
+    width: 130px;
+    height: 100px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  
+  .right-side {
+    width: calc(100% - 130px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  
+  .right-side:hover {
+    background-color: #f9f7f9;
+  }
+  
+  .arrow {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  
+  .new {
+    font-size: 23px;
+    font-family: "Jua", sans-serif;
+    margin-left: 20px;
+  }
+  
+  .card {
+    width: 70px;
+    height: 46px;
+    background-color: #c7ffbc;
+    border-radius: 6px;
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 9px 9px 9px -2px rgba(77, 200, 143, 0.72);
+    -moz-box-shadow: 9px 9px 9px -2px rgba(77, 200, 143, 0.72);
+    -webkit-box-shadow: 9px 9px 9px -2px rgba(77, 200, 143, 0.72);
+  }
+  
+  .card-line {
+    width: 65px;
+    height: 13px;
+    background-color: #80ea69;
+    border-radius: 2px;
+    margin-top: 7px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container {
+      transform: scale(0.7);
+    }
+  
+    .container:hover {
+      transform: scale(0.74);
+    }
+  
+    .new {
+      font-size: 18px;
+    }
+  }
+  
+  .buttons {
+    width: 8px;
+    height: 8px;
+    background-color: #379e1f;
+    box-shadow: 0 -10px 0 0 #26850e, 0 10px 0 0 #56be3e;
+    border-radius: 50%;
+    margin-top: 5px;
+    transform: rotate(90deg);
+    margin: 10px 0 0 -30px;
+  }
+  
+  .container:hover .card {
+    animation: slide-top 1.2s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+  }
+  
+  .container:hover .post {
+    animation: slide-post 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+  }
+  
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    50% {
+      -webkit-transform: translateY(-70px) rotate(90deg);
+      transform: translateY(-70px) rotate(90deg);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-70px) rotate(90deg);
+      transform: translateY(-70px) rotate(90deg);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-8px) rotate(90deg);
+      transform: translateY(-8px) rotate(90deg);
+    }
+  }
+  
+  .post {
+    width: 63px;
+    height: 75px;
+    background-color: #dddde0;
+    position: absolute;
+    z-index: 11;
+    bottom: 10px;
+    top: 100px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .post-line {
+    width: 47px;
+    height: 9px;
+    background-color: #545354;
+    position: absolute;
+    border-radius: 0px 0px 3px 3px;
+    right: 8px;
+    top: 8px;
+  }
+  
+  .post-line:before {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 9px;
+    background-color: #757375;
+    top: -8px;
+  }
+  
+  .screen {
+    width: 47px;
+    height: 23px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 22px;
+    right: 8px;
+    border-radius: 3px;
+  }
+  
+  .numbers {
+    width: 12px;
+    height: 12px;
+    background-color: #838183;
+    box-shadow: 0 -18px 0 0 #838183, 0 18px 0 0 #838183;
+    border-radius: 2px;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 25px;
+    top: 52px;
+  }
+  
+  .numbers-line2 {
+    width: 12px;
+    height: 12px;
+    background-color: #aaa9ab;
+    box-shadow: 0 -18px 0 0 #aaa9ab, 0 18px 0 0 #aaa9ab;
+    border-radius: 2px;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 25px;
+    top: 68px;
+  }
+  
+  @keyframes slide-post {
+    50% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  }
+  
+  .dollar {
+    position: absolute;
+    font-size: 16px;
+    font-family: "Lexend Deca", sans-serif;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: #4b953b;
+    text-align: center;
+  }
+  
+  .container:hover .dollar {
+    animation: fade-in-fwd 0.3s 1s backwards;
+  }
+  
+  @keyframes fade-in-fwd {
+    0% {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /*2번메뉴*/
+.menutwo {
+    width: 150px; /* 작게 조정 */
+    height: 200px; /* 작게 조정 */
+    padding: .5em; /* 작게 조정 */
+    border-radius: 30px; /* 작게 조정 */
+    background: #f5f5f5;
+    position: absolute;
+    top: 45%; /* 여기와 밑에줄이 위치를 바꾸는 코드!!!!!!*/
+    left: 50%;
+    transform: translate(-50%, -80%);
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    z-index: 1;
+}
+
+.menutwo-img {
+    background-color: #ffcaa6;
+    height: 25%; /* 작게 조정, 비율 유지를 위해 */
+    width: 90%; /* 가로 크기를 100%로 유지 */
+    border-radius: .5rem;
+    transition: .3s ease;
+    margin: auto;
+    margin-top: 10px; /* 작게 조정 */
+}
+
+.menutwo-info {
+    font-family: 'Jua', sans-serif;
+    padding-top: 5%; /* 작게 조정 */
+}
+
+svg {
+    width: 15px; /* 작게 조정 */
+    height: 15px; /* 작게 조정 */
+}
+
+.menutwo-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%; /* 작게 조정 */
+    border-top: 1px solid #ddd;
+}
+
+.texttwo-title {
+    font-weight: 700;
+    font-family: 'Jua', sans-serif;
+    font-size: 1em; /* 작게 조정 */
+    line-height: 1.5;
+    padding-left: 5%;
+}
+
+.texttwo-body {
+    font-size: 0.7em; /* 작게 조정 */
+    padding-bottom: 5%; /* 작게 조정 */
+    padding-left: 5%;
+}
+
+.menutwo-img:hover {
+    transform: translateY(-10%); /* 작게 조정 */
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 6px 23px -5px, rgba(180, 71, 71, 0.3) 0px 4px 8px -4px;
+}
