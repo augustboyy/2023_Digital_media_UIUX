@@ -1,0 +1,23 @@
+body {
+    background-color: #f0f0f0;
+    
+}
+
+h1 {
+    color: #f5f5f5;
+}
+
+
+/* 카드 스타일 */
+.card {
+    width: 440px;
+    height: 580px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 50px;
+    background: mediumturquoise;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    text-align: center;
+    position: relative; /* 상대적인 위치 설정 */
+}

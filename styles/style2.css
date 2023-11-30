@@ -1,3 +1,8 @@
+/*hello.html이 참조함*/
+body {
+    background-color: #f0f0f0;
+}
+
 .heade { /* 공듀키오스트 스타일*/
     max-width: 440px;
     margin: 10px auto;
@@ -6,7 +11,7 @@
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    color: #fff
+    color: #f5f5f5;
 }
 
 .card { /* 헬로 페이지의 카드*/
@@ -22,7 +27,7 @@
     justify-content: center;
     font-size: 25px;
     font-weight: bold;
-    color: #fff;
+    color: #f5f5f5;
     border-radius: 50px;
     cursor: pointer;
 }
