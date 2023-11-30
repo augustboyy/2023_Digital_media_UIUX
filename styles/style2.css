@@ -1,4 +1,4 @@
-.heade {
+.heade { /* 공듀키오스트 스타일*/
     max-width: 440px;
     margin: 10px auto;
     padding: 0px;
@@ -9,7 +9,7 @@
     color: #fff
 }
 
-.card {
+.card { /* 헬로 페이지의 카드*/
     position: absolute;
     top: 50%;
     left: 50%;
