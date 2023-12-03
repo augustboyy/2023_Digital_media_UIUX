@@ -4,11 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/recommandMenu.css">
-    <title>New Page</title>
+    <link rel="stylesheet" href="styles/toGoorHere.css">
+    <link rel="stylesheet" href="styles/progress.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <title>디미소 UI/UX 디자인 프로젝트</title>
 </head>
 <body>
-    <div class="card">
+    <div class="cardh">
         <h1>기현공듀의 키오스크</h1>
     </div>
+
+
+    <div class="menu" id="menu">
+        <div class="menu-img"></div>
+        <div class="menu-info">
+          <p class="text-title">* 추천 메뉴 * </p>
+          <p class="text-body">오늘의 음식!</p>
+        </div>
+        <div class="menu-footer">
+        <span class="text-title">10,000원</span>
+        </div>
+      </div>
+    </div>
+
+      <div class="menuthr" id="menuThr">
+        <div class="menuthr-img"></div>
+        <div class="menuthr-info">
+          <p class="textthr-title">* 추가 메뉴 * </p>
+          <p class="textthr-body">오늘의 음식!</p>
+        </div>
+        <div class="menuthr-footer">
+        <span class="textthr-title">6,000원</span>
+        </div>
+      </div>
+    </div>
+
+      <div class="menufor" id="menuFor">
+        <div class="menufor-img"></div>
+        <div class="menufor-info">
+          <p class="textfor-title">* 음료 *</p>
+          <p class="textfor-body">오늘의 음료!</p>
+        </div>
+        <div class="menufor-footer">
+        <span class="textfor-title">2,000원</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="containers">
+        <div class="tabs">
+          <input type="radio" id="radio-1" name="tabs" checked="">
+          <label class="tab" for="radio-1">매장</label>
+          <input type="radio" id="radio-2" name="tabs">
+          <label class="tab" for="radio-2">포장</label>
+          <span class="glider"></span>
+        </div>
+      </div>
+
+
+    <div class="container" id="container">
+        <div class="left-side">
+         <div class="card">
+          <div class="card-line"></div>
+          <div class="buttons"></div>
+         </div>
+         <div class="post">
+          <div class="post-line"></div>
+          <div class="screen">
+           <div class="dollar">₩</div>
+          </div>
+          <div class="numbers"></div>
+          <div class="numbers-line2"></div>
+         </div>
+        </div>
+        <div class="right-side">
+         <div class="new">누르면 결제합니다</div>
+         
+          <svg viewBox="0 0 451.846 451.847" height="512" width="512" xmlns="http://www.w3.org/2000/svg" class="arrow"><path fill="#cfcfcf" data-old_color="#000000" class="active-path" data-original="#000000" d="M345.441 248.292L151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z"></path></svg>
+        
+        </div>
+    </div>
+
+       <script src="scripts/pay.js"></script>
 </body>
 </html>
